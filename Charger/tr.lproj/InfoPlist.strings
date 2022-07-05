@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  Charger
+
+  Created by Aysegul COPUR on 3.07.2022.
+  
+*/
+
+NSLocationWhenInUseUsageDescription = "Size daha iyi bir deneyim sunabilmek için konumunuzu kullanmamız gerekmektedir.";
