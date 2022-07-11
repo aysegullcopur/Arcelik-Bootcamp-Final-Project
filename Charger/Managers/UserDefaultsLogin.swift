@@ -8,8 +8,8 @@
 import Foundation
 
 class UserDefaultsLogin {
-    static var isLoggedIn: Bool {
-        get { UserDefaults.standard.bool(forKey: "userLoggedIn") }
-        set { UserDefaults.standard.set(newValue, forKey: "userLoggedIn") }
+    static var userLoginModel: APILoginResponseModel? {
+        get { UserDefaults.standard.object(forKey: "userLoginModel") as? APILoginResponseModel }
+        set { UserDefaults.standard.set(newValue, forKey: "userLoginModel") }
     }
 }

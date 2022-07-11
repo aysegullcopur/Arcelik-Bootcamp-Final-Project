@@ -1,9 +1,9 @@
 
 /* Class = "UINavigationItem"; title = "Appointments"; ObjectID = "agJ-xn-Ukp"; */
-"agJ-xn-Ukp.title" = "Randevular";
+"agJ-xn-Ukp.title" = "Appointments";
 
 /* Class = "UILabel"; text = "Charger"; ObjectID = "cSc-oH-6FK"; */
 "cSc-oH-6FK.text" = "Charger";
 
 /* Class = "UINavigationItem"; title = "Giriş Yapın"; ObjectID = "dYY-lm-VWH"; */
-"dYY-lm-VWH.title" = "Giriş Yapın";
+"dYY-lm-VWH.title" = "Login";

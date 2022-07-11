@@ -3,17 +3,24 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Main Navigation Controller-->
         <scene sceneID="BdJ-bz-SrX">
             <objects>
-                <navigationController navigationBarHidden="YES" id="db2-uE-Kb4" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="launchNavigation" id="db2-uE-Kb4" customClass="MainNavigationController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hpu-Xt-vI2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PAN-Q4-iQA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="navigationBarColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KEg-gb-7O0"/>
@@ -61,38 +68,57 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="TSj-9d-4uI"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-320" y="136"/>
         </scene>
         <!--Login-->
-        <scene sceneID="GEn-Lj-KTi">
+        <scene sceneID="FQG-gB-bpZ">
             <objects>
-                <viewController storyboardIdentifier="loginViewController" title="Login" id="whK-XK-Ylk" customClass="LoginViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PC9-wg-ggZ">
+                <viewController storyboardIdentifier="LoginViewController" id="pj5-50-MRV" customClass="LoginViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TQW-DR-sc0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK5-CW-Oyd">
-                                <rect key="frame" x="133" y="598" width="148" height="54"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="oGU-ko-7ee"/>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="O70-7S-kX8"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="dYY-lm-VWH"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z5S-Ys-VqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tyJ-8I-9ap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="540.57971014492762" y="135.9375"/>
+            <point key="canvasLocation" x="523" y="136"/>
+        </scene>
+        <!--Appointments-->
+        <scene sceneID="wrN-Jd-Psl">
+            <objects>
+                <viewController storyboardIdentifier="AppointmentsViewController" id="iXQ-ka-aQA" customClass="AppointmentsViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jvs-b1-7fL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oev-YV-bcY"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Appointments" id="agJ-xn-Ukp"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZgJ-n7-abo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1348" y="136"/>
         </scene>
     </scenes>
     <resources>
         <image name="splash-background" width="202" height="360"/>
         <image name="splash-icon" width="45" height="45"/>
+        <namedColor name="backgroundColor">
+            <color red="0.23921568627450981" green="0.25882352941176473" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="navigationBarColor">
+            <color red="0.26551228760000001" green="0.28843072060000002" blue="0.32908475399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
