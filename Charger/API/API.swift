@@ -25,11 +25,13 @@ class API {
         
         // Sends the HTTP request
         urlSession.dataTask(with: urlRequest) { (data, response, error) in
-            if let data = data, let responseModel = try? JSONDecoder().decode(APILoginResponseModel.self, from: data) {
-                completion(.success(responseModel))
-            }
-            else {
-                completion(.failure(error ?? NSError()))
+            DispatchQueue.main.async {
+                if let data = data, let responseModel = try? JSONDecoder().decode(APILoginResponseModel.self, from: data) {
+                    completion(.success(responseModel))
+                }
+                else {
+                    completion(.failure(error ?? NSError()))
+                }
             }
         }.resume()
     }

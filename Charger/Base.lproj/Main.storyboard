@@ -12,12 +12,12 @@
         <!--Main Navigation Controller-->
         <scene sceneID="BdJ-bz-SrX">
             <objects>
-                <navigationController storyboardIdentifier="launchNavigation" id="db2-uE-Kb4" customClass="MainNavigationController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController id="db2-uE-Kb4" customClass="MainNavigationController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hpu-Xt-vI2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PAN-Q4-iQA">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" name="navigationBarColor"/>
+                        <color key="backgroundColor" name="charcoalGreyColor"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -78,31 +78,97 @@
         <!--Login-->
         <scene sceneID="FQG-gB-bpZ">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="pj5-50-MRV" customClass="LoginViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" title="Login" id="pj5-50-MRV" customClass="LoginViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TQW-DR-sc0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the Charger." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wa5-IR-M1B">
+                                <rect key="frame" x="80" y="228" width="254.5" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You should login to use the Charger." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRb-eK-JeC">
+                                <rect key="frame" x="40" y="292" width="334" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="gray25Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ASh-UJ-f91">
+                                <rect key="frame" x="15" y="382.5" width="384" height="18.5"/>
+                                <color key="textColor" name="gray25Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1fc-w0-gXx">
+                                <rect key="frame" x="15" y="411" width="384" height="1"/>
+                                <color key="backgroundColor" name="gray25Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="u8n-dx-Ku1"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAZ-nZ-OwM">
+                                <rect key="frame" x="55" y="737" width="304" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="azR-dY-2x8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="LOGIN">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
+                                    <color key="baseForegroundColor" name="Dark"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="27.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="pj5-50-MRV" eventType="touchUpInside" id="3i6-0I-NCz"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="O70-7S-kX8"/>
                         <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Wa5-IR-M1B" firstAttribute="top" secondItem="O70-7S-kX8" secondAttribute="top" constant="140" id="Gl3-MF-YIq"/>
+                            <constraint firstItem="O70-7S-kX8" firstAttribute="trailing" secondItem="1fc-w0-gXx" secondAttribute="trailing" constant="15" id="IbU-ah-acO"/>
+                            <constraint firstItem="1fc-w0-gXx" firstAttribute="top" secondItem="ASh-UJ-f91" secondAttribute="bottom" constant="10" id="RJB-LP-oc8"/>
+                            <constraint firstItem="Wa5-IR-M1B" firstAttribute="centerX" secondItem="O70-7S-kX8" secondAttribute="centerX" id="SEb-r4-vpQ"/>
+                            <constraint firstItem="nRb-eK-JeC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="O70-7S-kX8" secondAttribute="leading" constant="40" id="Sbi-dl-Gs4"/>
+                            <constraint firstItem="O70-7S-kX8" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="nRb-eK-JeC" secondAttribute="trailing" constant="40" id="aHg-ZA-ERj"/>
+                            <constraint firstItem="1fc-w0-gXx" firstAttribute="leading" secondItem="O70-7S-kX8" secondAttribute="leading" constant="15" id="gfE-oJ-OOL"/>
+                            <constraint firstItem="ASh-UJ-f91" firstAttribute="leading" secondItem="O70-7S-kX8" secondAttribute="leading" constant="15" id="kVl-z0-NGX"/>
+                            <constraint firstItem="O70-7S-kX8" firstAttribute="bottom" secondItem="DAZ-nZ-OwM" secondAttribute="bottom" constant="70" id="oSo-Pq-rHq"/>
+                            <constraint firstItem="nRb-eK-JeC" firstAttribute="centerX" secondItem="O70-7S-kX8" secondAttribute="centerX" id="ple-wd-YpY"/>
+                            <constraint firstItem="nRb-eK-JeC" firstAttribute="top" secondItem="Wa5-IR-M1B" secondAttribute="bottom" constant="35" id="rdi-en-P1D"/>
+                            <constraint firstItem="DAZ-nZ-OwM" firstAttribute="leading" secondItem="O70-7S-kX8" secondAttribute="leading" constant="55" id="v5p-Pw-FDN"/>
+                            <constraint firstItem="ASh-UJ-f91" firstAttribute="top" secondItem="nRb-eK-JeC" secondAttribute="bottom" constant="70" id="vZj-sR-nsb"/>
+                            <constraint firstItem="O70-7S-kX8" firstAttribute="trailing" secondItem="DAZ-nZ-OwM" secondAttribute="trailing" constant="55" id="wtu-9g-6S5"/>
+                            <constraint firstItem="O70-7S-kX8" firstAttribute="trailing" secondItem="ASh-UJ-f91" secondAttribute="trailing" constant="15" id="zdT-9i-rBa"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login" id="dYY-lm-VWH"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="ASh-UJ-f91" id="K2X-vB-ChB"/>
+                        <outlet property="loginButton" destination="DAZ-nZ-OwM" id="44P-lO-NAa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tyJ-8I-9ap" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="523" y="136"/>
+            <point key="canvasLocation" x="521.73913043478262" y="135.9375"/>
         </scene>
         <!--Appointments-->
         <scene sceneID="wrN-Jd-Psl">
             <objects>
-                <viewController storyboardIdentifier="AppointmentsViewController" id="iXQ-ka-aQA" customClass="AppointmentsViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AppointmentsViewController" title="Appointments" id="iXQ-ka-aQA" customClass="AppointmentsViewController" customModule="Charger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jvs-b1-7fL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Oev-YV-bcY"/>
                         <color key="backgroundColor" name="backgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Appointments" id="agJ-xn-Ukp"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZgJ-n7-abo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -113,11 +179,17 @@
     <resources>
         <image name="splash-background" width="202" height="360"/>
         <image name="splash-icon" width="45" height="45"/>
+        <namedColor name="Dark">
+            <color red="0.10196078431372549" green="0.11764705882352941" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="backgroundColor">
             <color red="0.23921568627450981" green="0.25882352941176473" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="navigationBarColor">
-            <color red="0.26551228760000001" green="0.28843072060000002" blue="0.32908475399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="charcoalGreyColor">
+            <color red="0.2627450980392157" green="0.28627450980392155" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="gray25Color">
+            <color red="0.71764705882352942" green="0.74117647058823533" blue="0.79607843137254897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

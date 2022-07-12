@@ -1,0 +1,15 @@
+/* 
+  Localization.strings
+  Charger
+
+  Created by Aysegul COPUR on 11.07.2022.
+  
+*/
+
+"emailTextFieldPlaceholder" = "E-POSTA ADRESİNİZ";
+
+"genericErrorMessage" = "Bir hata oluştu.";
+
+"emptyEmailErrorMessage" = "Email boş bırakılamaz.";
+
+"alertActionOkayTitle" = "Tamam";

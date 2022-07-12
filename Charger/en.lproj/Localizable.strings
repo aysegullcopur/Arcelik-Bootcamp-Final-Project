@@ -1,0 +1,15 @@
+/* 
+  Localization.strings
+  Charger
+
+  Created by Aysegul COPUR on 11.07.2022.
+  
+*/
+
+"emailTextFieldPlaceholder" = "YOUR E-MAIL";
+
+"genericErrorMessage" = "An error occurred.";
+
+"emptyEmailErrorMessage" = "Email can not be empty.";
+
+"alertActionOkayTitle" = "Okay";

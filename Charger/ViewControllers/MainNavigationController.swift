@@ -17,9 +17,9 @@ class MainNavigationController: UINavigationController {
         return topViewController
     }
     
-    private lazy var statusBarBackgroundView: UIView = {
+    private var statusBarBackgroundView: UIView = {
         let view = UIView()
-        view.backgroundColor = #colorLiteral(red: 0.2655122876, green: 0.2884307206, blue: 0.329084754, alpha: 1)
+        view.backgroundColor = #colorLiteral(red: 0.262745098, green: 0.2862745098, blue: 0.3333333333, alpha: 1)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
