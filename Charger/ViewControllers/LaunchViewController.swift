@@ -52,25 +52,17 @@ class LaunchViewController: UIViewController {
     
     func navigateToNextScreen() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        if UserDefaultsLogin.userLoginModel == nil {
+        if UserDefaultsLogin.email == nil {
             // moves to login screen
             let loginViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
             navigationController?.setViewControllers([loginViewController], animated: true)
-            
         }
         else {
             // moves to appointments screen
             let appointmentsViewController = storyBoard.instantiateViewController(withIdentifier: "AppointmentsViewController")
             navigationController?.setViewControllers([appointmentsViewController], animated: true)
-                        
         }
-//        if let uuid = UIDevice.current.identifierForVendor?.uuidString {
-//            //TODO: create APILoginRequestModel
-//            let email = "aysegullcopur@gmail.com"
-//            API.login(email: email, deviceUDID: uuid)
-//        }
     }
-    
 }
 
 extension LaunchViewController: CLLocationManagerDelegate {
