@@ -36,13 +36,41 @@ class API {
         }.resume()
     }
     
-    private static func makeUrl(endpoint: APIEndpoint) -> URL? {
-        return URL(string: domain + endpoint.path)
+    static func logout(userId: Int, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard let url = makeUrl(endpoint: .logout(userId: userId)) else {
+            return
+        }
+        
+        let urlRequest = makeUrlRequest(url: url, httpMethod: "POST", httpBody: nil)
+        urlSession.dataTask(with: urlRequest) { (data, response, error) in
+            DispatchQueue.main.async {
+                if let _ = data {
+                    completion(.success(()))
+                }
+                else {
+                    completion(.failure(error ?? NSError()))
+                }
+            }
+        }.resume()
+    }
+    
+    private static func makeUrl(endpoint: APIEndpoint, queryItems: [URLQueryItem] = []) -> URL? {
+        //return URL(string: domain + endpoint.path)
+        guard var urlComponents = URLComponents(string: domain + endpoint.path) else {
+            return nil
+        }
+        
+        urlComponents.queryItems = (urlComponents.queryItems ?? []) + queryItems
+        return urlComponents.url
     }
     
     private static func makeUrlRequest(url: URL, httpMethod: String?, httpBody: Data?) -> URLRequest {
         var urlRequest = URLRequest(url: url)
         urlRequest.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        // sets token as http header
+        if let token = UserDefaultsLogin.token {
+            urlRequest.setValue(token, forHTTPHeaderField: "token")
+        }
         urlRequest.httpMethod = httpMethod
         urlRequest.httpBody = httpBody
         return urlRequest

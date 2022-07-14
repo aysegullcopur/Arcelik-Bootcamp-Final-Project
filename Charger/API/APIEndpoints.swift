@@ -9,12 +9,12 @@ import Foundation
 
 enum APIEndpoint {
     case login
-    case logout(userId: String)
+    case logout(userId: Int)
     case provinces
     case stations
     case stationsAvailability(id: String)
     case makeAppointment
-    case appointments(userId: String)
+    case appointments(userId: Int)
     case cancelAppointment(appointmentId: String)
     
     var path: String {
