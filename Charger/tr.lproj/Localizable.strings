@@ -13,3 +13,5 @@
 "emptyEmailErrorMessage" = "Email boş bırakılamaz.";
 
 "alertActionOkayTitle" = "Tamam";
+
+"logoutErrorMessage" = "Çıkış yapılamadı.";

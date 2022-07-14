@@ -13,3 +13,5 @@
 "emptyEmailErrorMessage" = "Email can not be empty.";
 
 "alertActionOkayTitle" = "Okay";
+
+"logoutErrorMessage" = "Could not logout.";
