@@ -15,3 +15,8 @@
 "alertActionOkayTitle" = "Okay";
 
 "logoutErrorMessage" = "Could not logout.";
+
+"headerCurrentAppointmentsTitle" = "CURRENT APPOINTMENTS";
+
+"headerPastAppointmentsTitle" = "PAST APPOINTMENTS";
+
