@@ -17,6 +17,8 @@
 		E46F177D287C44DA00F7AADA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46F177C287C44DA00F7AADA /* Colors.xcassets */; };
 		E46F1782287C9D8E00F7AADA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46F1784287C9D8E00F7AADA /* Localizable.strings */; };
 		E46F1787287EC46A00F7AADA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F1786287EC46A00F7AADA /* ProfileViewController.swift */; };
+		E46F178D28808CEA00F7AADA /* AppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F178C28808CEA00F7AADA /* AppointmentsTableViewCell.swift */; };
+		E46F179028818A1200F7AADA /* AppointmentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F178F28818A1100F7AADA /* AppointmentHeaderView.swift */; };
 		E49A94DF286CE50500CBB7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A94DE286CE50500CBB7F5 /* AppDelegate.swift */; };
 		E49A94E1286CE50500CBB7F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A94E0286CE50500CBB7F5 /* SceneDelegate.swift */; };
 		E49A94E3286CE50500CBB7F5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A94E2286CE50500CBB7F5 /* LaunchViewController.swift */; };
@@ -40,6 +42,8 @@
 		E46F1783287C9D8E00F7AADA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E46F1785287C9D8F00F7AADA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E46F1786287EC46A00F7AADA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E46F178C28808CEA00F7AADA /* AppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewCell.swift; sourceTree = "<group>"; };
+		E46F178F28818A1100F7AADA /* AppointmentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentHeaderView.swift; sourceTree = "<group>"; };
 		E49A94DB286CE50500CBB7F5 /* Charger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49A94DE286CE50500CBB7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49A94E0286CE50500CBB7F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +109,6 @@
 				E49A9501286E041900CBB7F5 /* Models */,
 				E49A9500286E040B00CBB7F5 /* Views */,
 				E49A94FF286E03FF00CBB7F5 /* ViewControllers */,
-				E49A94F7286E039000CBB7F5 /* ViewModels */,
 				E49A94DE286CE50500CBB7F5 /* AppDelegate.swift */,
 				E49A94E0286CE50500CBB7F5 /* SceneDelegate.swift */,
 				E49A94E4286CE50500CBB7F5 /* Main.storyboard */,
@@ -117,13 +120,6 @@
 				E46F1784287C9D8E00F7AADA /* Localizable.strings */,
 			);
 			path = Charger;
-			sourceTree = "<group>";
-		};
-		E49A94F7286E039000CBB7F5 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E49A94FF286E03FF00CBB7F5 /* ViewControllers */ = {
@@ -141,6 +137,8 @@
 		E49A9500286E040B00CBB7F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E46F178C28808CEA00F7AADA /* AppointmentsTableViewCell.swift */,
+				E46F178F28818A1100F7AADA /* AppointmentHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -228,11 +226,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46F176728720AB800F7AADA /* APIModels.swift in Sources */,
+				E46F179028818A1200F7AADA /* AppointmentHeaderView.swift in Sources */,
 				E46F176A287443D700F7AADA /* UserDefaultsLogin.swift in Sources */,
 				E46F17652871F6CF00F7AADA /* APIEndpoints.swift in Sources */,
 				E49A94E3286CE50500CBB7F5 /* LaunchViewController.swift in Sources */,
 				E46F176E28745BBE00F7AADA /* AppointmentsViewController.swift in Sources */,
 				E46F177B287C409000F7AADA /* MainNavigationController.swift in Sources */,
+				E46F178D28808CEA00F7AADA /* AppointmentsTableViewCell.swift in Sources */,
 				E46F1787287EC46A00F7AADA /* ProfileViewController.swift in Sources */,
 				E46F176C28745B8900F7AADA /* LoginViewController.swift in Sources */,
 				E49A94DF286CE50500CBB7F5 /* AppDelegate.swift in Sources */,

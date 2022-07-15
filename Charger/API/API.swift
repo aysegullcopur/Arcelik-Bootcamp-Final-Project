@@ -54,13 +54,40 @@ class API {
         }.resume()
     }
     
+    static func appointments(userId: Int, latitude: Double?, longitude: Double?, completion: @escaping (Result<[APIAppointmentModel], Error>) -> Void) {
+        var queryItems: [URLQueryItem] = []
+        if let latitude = latitude, let longitude = longitude {
+            queryItems = [
+                URLQueryItem(name: "userLatitude", value: String(latitude)),
+                URLQueryItem(name: "userLongitude", value: String(longitude)),
+            ]
+        }
+        
+        guard let url = makeUrl(endpoint: .appointments(userId: userId), queryItems: queryItems) else {
+            return
+        }
+        
+        let urlRequest = makeUrlRequest(url: url, httpMethod: "GET", httpBody: nil)
+        
+        // Sends the HTTP request
+        urlSession.dataTask(with: urlRequest) { (data, response, error) in
+            DispatchQueue.main.async {
+                if let data = data, let responseModel = try? JSONDecoder().decode([APIAppointmentModel].self, from: data) {
+                    completion(.success(responseModel))
+                }
+                else {
+                    completion(.failure(error ?? NSError()))
+                }
+            }
+        }.resume()
+    }
+    
     private static func makeUrl(endpoint: APIEndpoint, queryItems: [URLQueryItem] = []) -> URL? {
-        //return URL(string: domain + endpoint.path)
         guard var urlComponents = URLComponents(string: domain + endpoint.path) else {
             return nil
         }
         
-        urlComponents.queryItems = (urlComponents.queryItems ?? []) + queryItems
+        urlComponents.queryItems = queryItems
         return urlComponents.url
     }
     
@@ -75,5 +102,4 @@ class API {
         urlRequest.httpBody = httpBody
         return urlRequest
     }
-    
 }

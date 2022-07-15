@@ -15,3 +15,7 @@
 "alertActionOkayTitle" = "Tamam";
 
 "logoutErrorMessage" = "Çıkış yapılamadı.";
+
+"headerCurrentAppointmentsTitle" = "GÜNCEL RANDEVULAR";
+
+"headerPastAppointmentsTitle" = "GEÇMİŞ RANDEVULAR";
