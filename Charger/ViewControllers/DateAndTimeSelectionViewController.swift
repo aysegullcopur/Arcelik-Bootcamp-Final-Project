@@ -25,17 +25,29 @@ class DateAndTimeSelectionViewController: UIViewController {
     @IBOutlet weak var socketSlotsColletionView3: UICollectionView!
     
     @IBAction func continueButtonTapped(_ sender: UIButton) {
-        
-        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let appointmentDetailViewController = storyBoard.instantiateViewController(withIdentifier: "AppointmentDetailViewController") as! AppointmentDetailViewController
-        appointmentDetailViewController.selectedStation = selectedStation
-        appointmentDetailViewController.selectedSocket = selectedSocket
-        appointmentDetailViewController.selectedSocketTimeSlot = selectedSocketTimeSlot
-        navigationController?.pushViewController(appointmentDetailViewController, animated: true)
-        
+        if properDateTime() {
+            let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+            let appointmentDetailViewController = storyBoard.instantiateViewController(withIdentifier: "AppointmentDetailViewController") as! AppointmentDetailViewController
+            appointmentDetailViewController.selectedStation = selectedStation
+            appointmentDetailViewController.selectedSocket = selectedSocket
+            appointmentDetailViewController.selectedSocketTimeSlot = selectedSocketTimeSlot
+            navigationController?.pushViewController(appointmentDetailViewController, animated: true)
+        }
+        else {
+            presentAlert(title: String(localized: "improperDateErrorMessage"))
+        }
+    }
+    
+    private func properDateTime() -> Bool {
+        let currentDate = Date()
+        if let date = selectedSocket?.appointmentDateString, let time = selectedSocketTimeSlot?.timeString { return
+            compareDateFormatter.date(from: date + time)! >= currentDate
+        }
+        return false
     }
     
     var pickedDate: Date?
+    let compareDateFormatter = DateFormatter()
     let textFieldDateFormatter = DateFormatter()
     let apiDateFormatter = DateFormatter()
     
@@ -58,6 +70,7 @@ class DateAndTimeSelectionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        compareDateFormatter.dateFormat = "yyyy-MM-ddHH:mm"
         textFieldDateFormatter.dateFormat = "d MMM yyyy"
         apiDateFormatter.dateFormat = "yyyy-MM-dd"
         
@@ -109,7 +122,6 @@ class DateAndTimeSelectionViewController: UIViewController {
             case .success(let station):
                 self.configureStationData(station)
             case .failure(_):
-                // TODO: eski tarih hata mesaji goster
                 self.presentAlert(title: String(localized: "genericErrorMessage"))
             }
             

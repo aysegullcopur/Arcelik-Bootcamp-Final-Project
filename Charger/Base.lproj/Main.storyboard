@@ -312,20 +312,20 @@
                                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aIP-Fs-Exb">
                                                                             <rect key="frame" x="15" y="15" width="324" height="98"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="Soket numarası:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxt-5w-49g">
-                                                                                    <rect key="frame" x="0.0" y="37.5" width="135.5" height="23"/>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="Socket number:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jxt-5w-49g">
+                                                                                    <rect key="frame" x="0.0" y="37.5" width="133.5" height="23"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                                                     <color key="textColor" name="gray25Color"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65J-Ne-cFl">
-                                                                                    <rect key="frame" x="145.5" y="38.5" width="44" height="21.5"/>
+                                                                                    <rect key="frame" x="143.5" y="38.5" width="44" height="21.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3gc-i0-GuU">
-                                                                                    <rect key="frame" x="199.5" y="38.5" width="124.5" height="21.5"/>
+                                                                                    <rect key="frame" x="197.5" y="38.5" width="126.5" height="21.5"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                     <color key="textColor" name="gray25Color"/>
                                                                                     <nil key="highlightedColor"/>
@@ -551,14 +551,14 @@
                                 <color key="separatorColor" name="gray25Color"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CitySelectionTableViewCell" id="jWd-JQ-ZIf" customClass="CitySelectionTableViewCell" customModule="Charger" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jWd-JQ-ZIf" id="7Ew-bo-1Ng">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bNX-7Y-nvx">
-                                                    <rect key="frame" x="20" y="10" width="374" height="21.5"/>
+                                                    <rect key="frame" x="20" y="10" width="374" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" name="gray25Color"/>
                                                     <nil key="highlightedColor"/>
@@ -674,14 +674,14 @@
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="YWR-Cj-M7J">
                                                                                     <rect key="frame" x="15" y="15" width="324" height="21.5"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Hizmet saatleri:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-UN-O5W">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="125" height="21.5"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="253" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Service hours:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mI7-UN-O5W">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="115" height="21.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                             <color key="textColor" name="gray25Color"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Saat" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4e-l9-pcv">
-                                                                                            <rect key="frame" x="135" y="0.0" width="135" height="21.5"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4e-l9-pcv">
+                                                                                            <rect key="frame" x="125" y="0.0" width="145" height="21.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
@@ -714,14 +714,14 @@
                                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="450-yd-o0x">
                                                                                     <rect key="frame" x="15" y="15" width="324" height="21.5"/>
                                                                                     <subviews>
-                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Uygun soket sayısı:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikL-xn-61P">
-                                                                                            <rect key="frame" x="0.0" y="0.0" width="154.5" height="21.5"/>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Available socket numbers:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ikL-xn-61P">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="209" height="21.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                             <color key="textColor" name="gray25Color"/>
                                                                                             <nil key="highlightedColor"/>
                                                                                         </label>
                                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-WK-txc">
-                                                                                            <rect key="frame" x="164.5" y="0.0" width="159.5" height="21.5"/>
+                                                                                            <rect key="frame" x="219" y="0.0" width="105" height="21.5"/>
                                                                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                                             <nil key="highlightedColor"/>
@@ -1493,7 +1493,7 @@
                                     <constraint firstAttribute="height" constant="55" id="L7w-wm-1iu"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="APPROVE">
+                                <buttonConfiguration key="configuration" style="filled" title="APPROVE APPOINTMENT">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="18"/>
                                     <color key="baseForegroundColor" name="Dark"/>
                                     <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1504,7 +1504,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="logoutButtonPressedWith_sender:" destination="HOn-wE-2Km" eventType="touchUpInside" id="OYw-8z-cGg"/>
+                                    <action selector="approveButtonTapped:" destination="eQY-23-H0T" eventType="touchUpInside" id="3xx-sH-32N"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1526,6 +1526,7 @@
                         <outlet property="addressLabel" destination="uK4-9G-exP" id="CWT-dF-fq3"/>
                         <outlet property="appointmentDateLabel" destination="fex-O2-n5g" id="0DP-Np-r8R"/>
                         <outlet property="appointmentTimeLabel" destination="KMG-oK-Fa0" id="vvW-Ke-Qjh"/>
+                        <outlet property="approveButton" destination="TAD-OW-T8D" id="Yqg-sr-xHt"/>
                         <outlet property="deviceTypeLabel" destination="ET7-ef-iSv" id="ib6-pL-kyf"/>
                         <outlet property="distanceLabel" destination="QfZ-1F-4CD" id="7uR-S5-mb2"/>
                         <outlet property="servicesLabel" destination="tQ1-Gi-N84" id="Yab-kY-8fR"/>
