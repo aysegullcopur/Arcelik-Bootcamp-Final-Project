@@ -12,7 +12,7 @@ enum APIEndpoint {
     case logout(userId: Int)
     case provinces
     case stations
-    case stationsAvailability(id: String)
+    case stationsAvailability(stationId: Int)
     case makeAppointment
     case appointments(userId: Int)
     case cancelAppointment(appointmentId: String)

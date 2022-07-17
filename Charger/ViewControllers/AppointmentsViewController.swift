@@ -15,7 +15,7 @@ class AppointmentsViewController: UIViewController {
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     let dateFormatterGet = DateFormatter()
-    let dateFormatterPrint = DateFormatter()
+    let apiDateFormatter = DateFormatter()
     
     override var prefersStatusBarHidden: Bool {
         return false
@@ -35,10 +35,9 @@ class AppointmentsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         // formats date
         dateFormatterGet.dateFormat = "yyyy-MM-ddHH:mm"
-        dateFormatterPrint.dateFormat = "dd MMM yyyy, HH:mm"
+        apiDateFormatter.dateFormat = "dd MMM yyyy, HH:mm"
         //set delegates and dataSource
         appointmentsTableView.dataSource = self
         appointmentsTableView.delegate = self
@@ -93,8 +92,7 @@ class AppointmentsViewController: UIViewController {
             case .success(let appointments):
                 self.updateAppointments(appointments)
             case .failure(_):
-                //TODO: handle the error
-                break
+                self.presentAlert(title: String(localized: "genericErrorMessage"))
             }
             self.activityIndicator.stopAnimating()
         }
@@ -115,6 +113,13 @@ class AppointmentsViewController: UIViewController {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let profileViewController = storyBoard.instantiateViewController(withIdentifier: "ProfileViewController")
         navigationController?.pushViewController(profileViewController, animated: true)
+    }
+    
+    private func presentAlert(title: String) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: String(localized: "alertActionOkayTitle") , style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true)
     }
     
 }
@@ -196,9 +201,9 @@ extension AppointmentsViewController: UITableViewDataSource {
     }
     
     private func setAppointmentCell(cell: AppointmentsTableViewCell, appointment: APIAppointmentModel) {
-        cell.stationProvinceNameLabel.text = appointment.stationName + ", " + appointment.station.geoLocation.province
+        cell.stationNameLabel.text = appointment.stationName
         let date = dateFormatterGet.date(from: appointment.dateTime)!
-        cell.dateTimeLabel.text = dateFormatterPrint.string(from: date)
+        cell.dateTimeLabel.text = apiDateFormatter.string(from: date)
         cell.socketNumberLabel.text = String(appointment.socketID)
         cell.chargeSocketTypeLabel.text = appointment.socket.chargeType + "•" + appointment.socket.socketType
     }

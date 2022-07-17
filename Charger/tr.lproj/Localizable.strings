@@ -19,3 +19,7 @@
 "headerCurrentAppointmentsTitle" = "GÜNCEL RANDEVULAR";
 
 "headerPastAppointmentsTitle" = "GEÇMİŞ RANDEVULAR";
+
+"stationsListInfo" = "şehri için <<0>> sonuç görüntüleniyor.";
+
+"enterDatePlaceholder" = "Tarih giriniz";
