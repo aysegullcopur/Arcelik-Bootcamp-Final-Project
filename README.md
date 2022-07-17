@@ -15,6 +15,8 @@
 ## Appoinments Screen
 - When user do not have any appointments, the appoinment screen looks like below.
 <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss5.png" width="30%" />
+- When user have any appointments, the appoinment screen looks like below.
+<img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss12.png" width="30%" />
 
 ## Profile Screen
 - The screen contains user informations.
