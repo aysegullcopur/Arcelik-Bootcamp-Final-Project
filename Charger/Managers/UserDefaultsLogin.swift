@@ -8,8 +8,28 @@
 import Foundation
 
 class UserDefaultsLogin {
-    static var isLoggedIn: Bool {
-        get { UserDefaults.standard.bool(forKey: "userLoggedIn") }
-        set { UserDefaults.standard.set(newValue, forKey: "userLoggedIn") }
+    static var email: String? {
+        get {
+            UserDefaults.standard.string(forKey: "email")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "email")
+        }
+    }
+    static var token: String? {
+        get {
+            UserDefaults.standard.string(forKey: "token")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "token")
+        }
+    }
+    static var userId: Int? {
+        get {
+            UserDefaults.standard.integer(forKey: "userId")
+        }
+        set {
+            UserDefaults.standard.set(newValue, forKey: "userId")
+        }
     }
 }

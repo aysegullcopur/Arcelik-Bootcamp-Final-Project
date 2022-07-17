@@ -13,6 +13,22 @@
 		E46F176A287443D700F7AADA /* UserDefaultsLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F1769287443D700F7AADA /* UserDefaultsLogin.swift */; };
 		E46F176C28745B8900F7AADA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F176B28745B8900F7AADA /* LoginViewController.swift */; };
 		E46F176E28745BBE00F7AADA /* AppointmentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F176D28745BBE00F7AADA /* AppointmentsViewController.swift */; };
+		E46F177B287C409000F7AADA /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F177A287C409000F7AADA /* MainNavigationController.swift */; };
+		E46F177D287C44DA00F7AADA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46F177C287C44DA00F7AADA /* Colors.xcassets */; };
+		E46F1782287C9D8E00F7AADA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E46F1784287C9D8E00F7AADA /* Localizable.strings */; };
+		E46F1787287EC46A00F7AADA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F1786287EC46A00F7AADA /* ProfileViewController.swift */; };
+		E46F178D28808CEA00F7AADA /* AppointmentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F178C28808CEA00F7AADA /* AppointmentsTableViewCell.swift */; };
+		E46F179028818A1200F7AADA /* AppointmentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F178F28818A1100F7AADA /* AppointmentHeaderView.swift */; };
+		E46F17922882005F00F7AADA /* CitySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F17912882005F00F7AADA /* CitySelectionTableViewCell.swift */; };
+		E46F1794288200B200F7AADA /* CitySelectionTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F1793288200B200F7AADA /* CitySelectionTableView.swift */; };
+		E46F17962882011300F7AADA /* StationSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F17952882011300F7AADA /* StationSelectionViewController.swift */; };
+		E46F17982882078100F7AADA /* CitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F17972882078100F7AADA /* CitySelectionViewController.swift */; };
+		E46F179A2882AF1700F7AADA /* StationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F17992882AF1500F7AADA /* StationSelectionTableViewCell.swift */; };
+		E46F179C2883232000F7AADA /* DateAndTimeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F179B2883231F00F7AADA /* DateAndTimeSelectionViewController.swift */; };
+		E46F179E2883433300F7AADA /* TimeSlotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F179D2883433300F7AADA /* TimeSlotCollectionViewCell.swift */; };
+		E46F17A02883C22400F7AADA /* AppointmentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F179F2883C22200F7AADA /* AppointmentDetailViewController.swift */; };
+		E46F17AA2883FCEF00F7AADA /* SocketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F17A92883FCEF00F7AADA /* SocketModel.swift */; };
+		E46F17AC2883FD7300F7AADA /* SocketTimeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F17AB2883FD7300F7AADA /* SocketTimeSlot.swift */; };
 		E49A94DF286CE50500CBB7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A94DE286CE50500CBB7F5 /* AppDelegate.swift */; };
 		E49A94E1286CE50500CBB7F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A94E0286CE50500CBB7F5 /* SceneDelegate.swift */; };
 		E49A94E3286CE50500CBB7F5 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49A94E2286CE50500CBB7F5 /* LaunchViewController.swift */; };
@@ -23,12 +39,31 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C38B44202884488400761A29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C38B4422288448B700761A29 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		E46F17622871F6B100F7AADA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E46F17642871F6CF00F7AADA /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		E46F176628720AB800F7AADA /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
 		E46F1769287443D700F7AADA /* UserDefaultsLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsLogin.swift; sourceTree = "<group>"; };
 		E46F176B28745B8900F7AADA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E46F176D28745BBE00F7AADA /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
+		E46F177A287C409000F7AADA /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		E46F177C287C44DA00F7AADA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		E46F1783287C9D8E00F7AADA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E46F1785287C9D8F00F7AADA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E46F1786287EC46A00F7AADA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E46F178C28808CEA00F7AADA /* AppointmentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsTableViewCell.swift; sourceTree = "<group>"; };
+		E46F178F28818A1100F7AADA /* AppointmentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentHeaderView.swift; sourceTree = "<group>"; };
+		E46F17912882005F00F7AADA /* CitySelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		E46F1793288200B200F7AADA /* CitySelectionTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionTableView.swift; sourceTree = "<group>"; };
+		E46F17952882011300F7AADA /* StationSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionViewController.swift; sourceTree = "<group>"; };
+		E46F17972882078100F7AADA /* CitySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySelectionViewController.swift; sourceTree = "<group>"; };
+		E46F17992882AF1500F7AADA /* StationSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		E46F179B2883231F00F7AADA /* DateAndTimeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAndTimeSelectionViewController.swift; sourceTree = "<group>"; };
+		E46F179D2883433300F7AADA /* TimeSlotCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotCollectionViewCell.swift; sourceTree = "<group>"; };
+		E46F179F2883C22200F7AADA /* AppointmentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentDetailViewController.swift; sourceTree = "<group>"; };
+		E46F17A92883FCEF00F7AADA /* SocketModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketModel.swift; sourceTree = "<group>"; };
+		E46F17AB2883FD7300F7AADA /* SocketTimeSlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketTimeSlot.swift; sourceTree = "<group>"; };
 		E49A94DB286CE50500CBB7F5 /* Charger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Charger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E49A94DE286CE50500CBB7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E49A94E0286CE50500CBB7F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +73,6 @@
 		E49A94EA286CE50E00CBB7F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E49A94EC286CE50E00CBB7F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E49A95112871B79300CBB7F5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E49A95132871B7AB00CBB7F5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		E49A95152871B7B300CBB7F5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,23 +129,17 @@
 				E49A9501286E041900CBB7F5 /* Models */,
 				E49A9500286E040B00CBB7F5 /* Views */,
 				E49A94FF286E03FF00CBB7F5 /* ViewControllers */,
-				E49A94F7286E039000CBB7F5 /* ViewModels */,
 				E49A94DE286CE50500CBB7F5 /* AppDelegate.swift */,
 				E49A94E0286CE50500CBB7F5 /* SceneDelegate.swift */,
 				E49A94E4286CE50500CBB7F5 /* Main.storyboard */,
-				E49A94E7286CE50E00CBB7F5 /* Assets.xcassets */,
 				E49A94E9286CE50E00CBB7F5 /* LaunchScreen.storyboard */,
+				E49A94E7286CE50E00CBB7F5 /* Assets.xcassets */,
+				E46F177C287C44DA00F7AADA /* Colors.xcassets */,
 				E49A94EC286CE50E00CBB7F5 /* Info.plist */,
 				E49A95122871B79300CBB7F5 /* InfoPlist.strings */,
+				E46F1784287C9D8E00F7AADA /* Localizable.strings */,
 			);
 			path = Charger;
-			sourceTree = "<group>";
-		};
-		E49A94F7286E039000CBB7F5 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		E49A94FF286E03FF00CBB7F5 /* ViewControllers */ = {
@@ -120,6 +148,12 @@
 				E49A94E2286CE50500CBB7F5 /* LaunchViewController.swift */,
 				E46F176B28745B8900F7AADA /* LoginViewController.swift */,
 				E46F176D28745BBE00F7AADA /* AppointmentsViewController.swift */,
+				E46F177A287C409000F7AADA /* MainNavigationController.swift */,
+				E46F1786287EC46A00F7AADA /* ProfileViewController.swift */,
+				E46F17952882011300F7AADA /* StationSelectionViewController.swift */,
+				E46F17972882078100F7AADA /* CitySelectionViewController.swift */,
+				E46F179B2883231F00F7AADA /* DateAndTimeSelectionViewController.swift */,
+				E46F179F2883C22200F7AADA /* AppointmentDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -127,6 +161,12 @@
 		E49A9500286E040B00CBB7F5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E46F178C28808CEA00F7AADA /* AppointmentsTableViewCell.swift */,
+				E46F178F28818A1100F7AADA /* AppointmentHeaderView.swift */,
+				E46F17912882005F00F7AADA /* CitySelectionTableViewCell.swift */,
+				E46F1793288200B200F7AADA /* CitySelectionTableView.swift */,
+				E46F17992882AF1500F7AADA /* StationSelectionTableViewCell.swift */,
+				E46F179D2883433300F7AADA /* TimeSlotCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -134,6 +174,8 @@
 		E49A9501286E041900CBB7F5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E46F17A92883FCEF00F7AADA /* SocketModel.swift */,
+				E46F17AB2883FD7300F7AADA /* SocketTimeSlot.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -197,6 +239,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F177D287C44DA00F7AADA /* Colors.xcassets in Resources */,
+				E46F1782287C9D8E00F7AADA /* Localizable.strings in Resources */,
 				E49A94EB286CE50E00CBB7F5 /* LaunchScreen.storyboard in Resources */,
 				E49A95102871B79300CBB7F5 /* InfoPlist.strings in Resources */,
 				E49A94E8286CE50E00CBB7F5 /* Assets.xcassets in Resources */,
@@ -212,13 +256,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				E46F176728720AB800F7AADA /* APIModels.swift in Sources */,
+				E46F179028818A1200F7AADA /* AppointmentHeaderView.swift in Sources */,
 				E46F176A287443D700F7AADA /* UserDefaultsLogin.swift in Sources */,
 				E46F17652871F6CF00F7AADA /* APIEndpoints.swift in Sources */,
+				E46F17A02883C22400F7AADA /* AppointmentDetailViewController.swift in Sources */,
 				E49A94E3286CE50500CBB7F5 /* LaunchViewController.swift in Sources */,
+				E46F179E2883433300F7AADA /* TimeSlotCollectionViewCell.swift in Sources */,
 				E46F176E28745BBE00F7AADA /* AppointmentsViewController.swift in Sources */,
+				E46F17922882005F00F7AADA /* CitySelectionTableViewCell.swift in Sources */,
+				E46F1794288200B200F7AADA /* CitySelectionTableView.swift in Sources */,
+				E46F177B287C409000F7AADA /* MainNavigationController.swift in Sources */,
+				E46F179A2882AF1700F7AADA /* StationSelectionTableViewCell.swift in Sources */,
+				E46F17962882011300F7AADA /* StationSelectionViewController.swift in Sources */,
+				E46F17982882078100F7AADA /* CitySelectionViewController.swift in Sources */,
+				E46F178D28808CEA00F7AADA /* AppointmentsTableViewCell.swift in Sources */,
+				E46F1787287EC46A00F7AADA /* ProfileViewController.swift in Sources */,
+				E46F17AA2883FCEF00F7AADA /* SocketModel.swift in Sources */,
 				E46F176C28745B8900F7AADA /* LoginViewController.swift in Sources */,
 				E49A94DF286CE50500CBB7F5 /* AppDelegate.swift in Sources */,
+				E46F179C2883232000F7AADA /* DateAndTimeSelectionViewController.swift in Sources */,
 				E46F17632871F6B100F7AADA /* API.swift in Sources */,
+				E46F17AC2883FD7300F7AADA /* SocketTimeSlot.swift in Sources */,
 				E49A94E1286CE50500CBB7F5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -226,11 +284,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		E46F1784287C9D8E00F7AADA /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E46F1783287C9D8E00F7AADA /* en */,
+				E46F1785287C9D8F00F7AADA /* tr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E49A94E4286CE50500CBB7F5 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				E49A94E5286CE50500CBB7F5 /* Base */,
-				E49A95132871B7AB00CBB7F5 /* tr */,
+				C38B44202884488400761A29 /* en */,
+				C38B4422288448B700761A29 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -383,9 +451,11 @@
 				DEVELOPMENT_TEAM = M3YLB937FZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Charger/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -411,9 +481,11 @@
 				DEVELOPMENT_TEAM = M3YLB937FZ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Charger/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

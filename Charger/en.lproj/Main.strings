@@ -3,7 +3,7 @@
 "08f-PC-oyg.normalTitle" = "Button";
 
 /* Class = "UINavigationItem"; title = "Pick Date and Time"; ObjectID = "22X-OE-mbx"; */
-"22X-OE-mbx.title" = "Tarih ve Saat Seçin";
+"22X-OE-mbx.title" = "Pick Date and Time";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "3gc-i0-GuU"; */
 "3gc-i0-GuU.text" = "Label";
@@ -15,13 +15,13 @@
 "AMY-WK-txc.text" = "Label";
 
 /* Class = "UILabel"; text = "SOCKET INFORMATIONS"; ObjectID = "D0E-f7-bDg"; */
-"D0E-f7-bDg.text" = "SOKET BİLGİLERİ";
+"D0E-f7-bDg.text" = "SOCKET INFORMATIONS";
 
 /* Class = "UIButton"; configuration.title = "LOGIN"; ObjectID = "DAZ-nZ-OwM"; */
-"DAZ-nZ-OwM.configuration.title" = "GİRİŞ";
+"DAZ-nZ-OwM.configuration.title" = "LOGIN";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DAZ-nZ-OwM"; */
-"DAZ-nZ-OwM.normalTitle" = "Buton";
+"DAZ-nZ-OwM.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "DE1-dj-rST"; */
 "DE1-dj-rST.text" = "-";
@@ -30,16 +30,16 @@
 "DU7-f7-CC9.text" = "-";
 
 /* Class = "UILabel"; text = "Time of Service"; ObjectID = "Dgg-CW-aRq"; */
-"Dgg-CW-aRq.text" = "Hizmet Saatleri";
+"Dgg-CW-aRq.text" = "Time of Service";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "ET7-ef-iSv"; */
 "ET7-ef-iSv.text" = "Label";
 
 /* Class = "UILabel"; text = "Distance"; ObjectID = "FuN-H3-atr"; */
-"FuN-H3-atr.text" = "Uzaklık";
+"FuN-H3-atr.text" = "Distance";
 
 /* Class = "UIBarButtonItem"; title = "Done"; ObjectID = "Hnw-ei-fuI"; */
-"Hnw-ei-fuI.title" = "Bitti";
+"Hnw-ei-fuI.title" = "Done";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "IH8-rL-D8t"; */
 "IH8-rL-D8t.text" = "Label";
@@ -48,16 +48,16 @@
 "IIy-ph-Ztq.text" = "email";
 
 /* Class = "UINavigationItem"; title = "Profile"; ObjectID = "J5I-Fx-zfb"; */
-"J5I-Fx-zfb.title" = "Profil";
+"J5I-Fx-zfb.title" = "Profile";
 
 /* Class = "UIButton"; configuration.title = "MAKE AN APPOINTMENT"; ObjectID = "JwH-4a-BeH"; */
-"JwH-4a-BeH.configuration.title" = "RANDEVU OLUŞTUR";
+"JwH-4a-BeH.configuration.title" = "MAKE AN APPOINTMENT";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "JwH-4a-BeH"; */
 "JwH-4a-BeH.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Soket numarası:"; ObjectID = "Jxt-5w-49g"; */
-"Jxt-5w-49g.text" = "Soket numarası:";
+"Jxt-5w-49g.text" = "Soket number:";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "KDV-GP-9iy"; */
 "KDV-GP-9iy.text" = "Label";
@@ -66,7 +66,7 @@
 "KMG-oK-Fa0.text" = "Label";
 
 /* Class = "UIButton"; configuration.title = "CONTINUE"; ObjectID = "Knk-7K-hME"; */
-"Knk-7K-hME.configuration.title" = "DEVAM ET";
+"Knk-7K-hME.configuration.title" = "CONTINUE";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Knk-7K-hME"; */
 "Knk-7K-hME.normalTitle" = "Button";
@@ -75,58 +75,58 @@
 "LEJ-1x-srh.text" = "Label";
 
 /* Class = "UINavigationItem"; title = "Choose City"; ObjectID = "Mak-mf-oAE"; */
-"Mak-mf-oAE.title" = "Şehir Seçin";
+"Mak-mf-oAE.title" = "Choose City";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "NHW-HZ-guU"; */
 "NHW-HZ-guU.text" = "Label";
 
 /* Class = "UILabel"; text = "STATION INFORMATIONS"; ObjectID = "O1y-fg-md1"; */
-"O1y-fg-md1.text" = "İSTASYON BİLGİLERİ";
+"O1y-fg-md1.text" = "STATION INFORMATIONS";
 
 /* Class = "UILabel"; text = "You have not created an appointment yet."; ObjectID = "Oer-N2-Mrf"; */
-"Oer-N2-Mrf.text" = "Henüz bir randevu oluşturmadınız.";
+"Oer-N2-Mrf.text" = "You have not created an appointment yet.";
 
 /* Class = "UILabel"; text = "Appointment Time"; ObjectID = "PUl-ZU-4MF"; */
-"PUl-ZU-4MF.text" = "Randevu Süresi";
+"PUl-ZU-4MF.text" = "Appointment Time";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "Pze-L7-Izo"; */
 "Pze-L7-Izo.text" = "-";
 
 /* Class = "UILabel"; text = "E-mail:"; ObjectID = "Qeh-ls-dag"; */
-"Qeh-ls-dag.text" = "E-posta:";
+"Qeh-ls-dag.text" = "E-mail:";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "QfZ-1F-4CD"; */
 "QfZ-1F-4CD.text" = "-";
 
 /* Class = "UILabel"; text = "APPOINTMENT INFORMATIONS"; ObjectID = "Sf0-oL-jlN"; */
-"Sf0-oL-jlN.text" = "RANDEVU BİLGİLERİ";
+"Sf0-oL-jlN.text" = "APPOINTMENT INFORMATIONS";
 
 /* Class = "UIButton"; configuration.title = "APPROVE"; ObjectID = "TAD-OW-T8D"; */
-"TAD-OW-T8D.configuration.title" = "RANDEVUYU ONAYLA";
+"TAD-OW-T8D.configuration.title" = "APPROVE APPOINTMENT";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "TAD-OW-T8D"; */
 "TAD-OW-T8D.normalTitle" = "Button";
 
 /* Class = "UINavigationItem"; title = "Appointments"; ObjectID = "UIv-2O-xDa"; */
-"UIv-2O-xDa.title" = "Randevular";
+"UIv-2O-xDa.title" = "Appointments";
 
 /* Class = "UINavigationItem"; title = "Login"; ObjectID = "V8s-lf-972"; */
-"V8s-lf-972.title" = "Giriş Yapın";
+"V8s-lf-972.title" = "Login";
 
 /* Class = "UILabel"; text = "Socket 1"; ObjectID = "Vby-iX-Hmi"; */
-"Vby-iX-Hmi.text" = "Soket 1";
+"Vby-iX-Hmi.text" = "Socket 1";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "VrG-MG-7TL"; */
 "VrG-MG-7TL.text" = "Label";
 
 /* Class = "UILabel"; text = "Welcome to the Charger."; ObjectID = "Wa5-IR-M1B"; */
-"Wa5-IR-M1B.text" = "Charger'a hoşgeldiniz.";
+"Wa5-IR-M1B.text" = "Welcome to the Charger.";
 
 /* Class = "UILabel"; text = "The created appointments are listed here."; ObjectID = "YQa-7C-Csj"; */
-"YQa-7C-Csj.text" = "Oluşturulan randevular burada listelenir.";
+"YQa-7C-Csj.text" = "The created appointments are listed here.";
 
 /* Class = "UILabel"; text = "Socket Type"; ObjectID = "ZeW-W4-tBx"; */
-"ZeW-W4-tBx.text" = "Soket Tipi";
+"ZeW-W4-tBx.text" = "Socket Type";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "a1W-n3-Sxv"; */
 "a1W-n3-Sxv.text" = "Label";
@@ -135,7 +135,7 @@
 "aAT-W3-Of1.text" = "-";
 
 /* Class = "UILabel"; text = "Appointment Date"; ObjectID = "b55-9A-TKa"; */
-"b55-9A-TKa.text" = "Randevu Tarihi";
+"b55-9A-TKa.text" = "Appointment Date";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "bNX-7Y-nvx"; */
 "bNX-7Y-nvx.text" = "Label";
@@ -144,10 +144,10 @@
 "bUK-Vi-vqi.text" = "Label";
 
 /* Class = "UILabel"; text = "Socket 2"; ObjectID = "c9e-MT-Qxr"; */
-"c9e-MT-Qxr.text" = "Soket 2";
+"c9e-MT-Qxr.text" = "Socket 2";
 
 /* Class = "UILabel"; text = "Socket Power"; ObjectID = "cHm-xE-EVj"; */
-"cHm-xE-EVj.text" = "Çıkış Gücü";
+"cHm-xE-EVj.text" = "Socket Power";
 
 /* Class = "UILabel"; text = "Charger"; ObjectID = "cSc-oH-6FK"; */
 "cSc-oH-6FK.text" = "Charger";
@@ -156,7 +156,7 @@
 "cne-KO-BvC.text" = "-";
 
 /* Class = "UIButton"; configuration.title = "LOGOUT"; ObjectID = "dUJ-1K-GhJ"; */
-"dUJ-1K-GhJ.configuration.title" = "ÇIKIŞ YAP";
+"dUJ-1K-GhJ.configuration.title" = "LOGOUT";
 
 /* Class = "UIButton"; normalTitle = "Button"; ObjectID = "dUJ-1K-GhJ"; */
 "dUJ-1K-GhJ.normalTitle" = "Button";
@@ -171,43 +171,43 @@
 "fl7-u1-da3.text" = "Borusan";
 
 /* Class = "UINavigationItem"; title = "Appointment Detail"; ObjectID = "gMQ-4e-zFY"; */
-"gMQ-4e-zFY.title" = "Randevu Detayı";
+"gMQ-4e-zFY.title" = "Appointment Detail";
 
 /* Class = "UILabel"; text = "1 Hour"; ObjectID = "i7M-C4-74r"; */
-"i7M-C4-74r.text" = "1 Saat";
+"i7M-C4-74r.text" = "1 Hour";
 
 /* Class = "UILabel"; text = "Address"; ObjectID = "iaD-kf-eG2"; */
-"iaD-kf-eG2.text" = "Adres";
+"iaD-kf-eG2.text" = "Address";
 
 /* Class = "UILabel"; text = "Uygun soket sayısı:"; ObjectID = "ikL-xn-61P"; */
-"ikL-xn-61P.text" = "Uygun soket sayısı:";
+"ikL-xn-61P.text" = "Available socket number:";
 
 /* Class = "UILabel"; text = "Time"; ObjectID = "j2g-99-l2l"; */
-"j2g-99-l2l.text" = "Saat";
+"j2g-99-l2l.text" = "Time";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "kis-rL-hsi"; */
 "kis-rL-hsi.text" = "Label";
 
 /* Class = "UILabel"; text = "Hizmet saatleri:"; ObjectID = "mI7-UN-O5W"; */
-"mI7-UN-O5W.text" = "Hizmet saatleri:";
+"mI7-UN-O5W.text" = "Service hours:";
 
 /* Class = "UILabel"; text = "Station Code"; ObjectID = "mzk-t6-bX2"; */
-"mzk-t6-bX2.text" = "İstasyon Kodu";
+"mzk-t6-bX2.text" = "Station Code";
 
 /* Class = "UILabel"; text = "You should login to use the Charger."; ObjectID = "nRb-eK-JeC"; */
-"nRb-eK-JeC.text" = "Charger'ı kullanmak için giriş yapmanız gerekiyor.";
+"nRb-eK-JeC.text" = "You should login to use the Charger.";
 
 /* Class = "UILabel"; text = "24 Hours"; ObjectID = "ngg-X1-gWd"; */
-"ngg-X1-gWd.text" = "24 Saat";
+"ngg-X1-gWd.text" = "24 Hours";
 
 /* Class = "UILabel"; text = "Device ID:"; ObjectID = "ofl-3M-l7C"; */
-"ofl-3M-l7C.text" = "Cihaz ID:";
+"ofl-3M-l7C.text" = "Device ID:";
 
 /* Class = "UILabel"; text = "Socket Number"; ObjectID = "oxH-Cy-Jkv"; */
-"oxH-Cy-Jkv.text" = "Soket Numarası";
+"oxH-Cy-Jkv.text" = "Socket Number";
 
 /* Class = "UILabel"; text = "Services"; ObjectID = "qgd-IP-l2L"; */
-"qgd-IP-l2L.text" = "Hizmetler";
+"qgd-IP-l2L.text" = "Services";
 
 /* Class = "UILabel"; text = "deviceId"; ObjectID = "t42-MB-fko"; */
 "t42-MB-fko.text" = "deviceId";
@@ -216,7 +216,7 @@
 "tQ1-Gi-N84.text" = "Label";
 
 /* Class = "UILabel"; text = "Socket 3"; ObjectID = "uGo-Cm-DqX"; */
-"uGo-Cm-DqX.text" = "Soket 3";
+"uGo-Cm-DqX.text" = "Socket 3";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "uK4-9G-exP"; */
 "uK4-9G-exP.text" = "Label";
@@ -225,16 +225,16 @@
 "v5B-72-tkk.text" = "Label";
 
 /* Class = "UINavigationItem"; title = "Select Station"; ObjectID = "vhn-Cu-xvI"; */
-"vhn-Cu-xvI.title" = "İstasyon Seçin";
+"vhn-Cu-xvI.title" = "Select Station";
 
 /* Class = "UILabel"; text = "Device Type"; ObjectID = "xaA-w9-X34"; */
-"xaA-w9-X34.text" = "Cihaz Tipi";
+"xaA-w9-X34.text" = "Device Type";
 
 /* Class = "UILabel"; text = "Date"; ObjectID = "y3l-5n-gQB"; */
-"y3l-5n-gQB.text" = "Tarih";
+"y3l-5n-gQB.text" = "Date";
 
 /* Class = "UILabel"; text = "-"; ObjectID = "yhc-H6-khm"; */
 "yhc-H6-khm.text" = "-";
 
 /* Class = "UILabel"; text = "24 Saat"; ObjectID = "z4e-l9-pcv"; */
-"z4e-l9-pcv.text" = "24 Saat";
+"z4e-l9-pcv.text" = "24 Hour";

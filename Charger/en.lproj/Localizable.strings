@@ -1,0 +1,27 @@
+/* 
+  Localization.strings
+  Charger
+
+  Created by Aysegul COPUR on 11.07.2022.
+  
+*/
+
+"emailTextFieldPlaceholder" = "YOUR E-MAIL";
+
+"genericErrorMessage" = "An error occurred.";
+
+"emptyEmailErrorMessage" = "Email can not be empty.";
+
+"alertActionOkayTitle" = "Okay";
+
+"logoutErrorMessage" = "Could not logout.";
+
+"headerCurrentAppointmentsTitle" = "CURRENT APPOINTMENTS";
+
+"headerPastAppointmentsTitle" = "PAST APPOINTMENTS";
+
+"stationsListInfo" = "has <<0>> station/stations.";
+
+"enterDatePlaceholder" = "Enter date";
+
+"improperDateErrorMessage" = "Invalid date and time.";

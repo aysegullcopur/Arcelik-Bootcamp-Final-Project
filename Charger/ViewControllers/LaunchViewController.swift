@@ -9,6 +9,10 @@ import UIKit
 import CoreLocation
 
 class LaunchViewController: UIViewController {
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
 
     private lazy var locationManager = CLLocationManager()
     
@@ -16,6 +20,12 @@ class LaunchViewController: UIViewController {
         super.viewDidLoad()
 
         locationManager.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func requestLocationPermissionIfRequired() {
@@ -42,21 +52,17 @@ class LaunchViewController: UIViewController {
     
     func navigateToNextScreen() {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        if UserDefaultsLogin.isLoggedIn {
-            //let appointmentsViewController = storyBoard.instantiateViewController(withIdentifier: "appointmentsViewController")
-            //navigationController?.setViewControllers([appointmentsViewController], animated: true)
+        if UserDefaultsLogin.email == nil {
+            // moves to login screen
+            let loginViewController = storyBoard.instantiateViewController(withIdentifier: "LoginViewController")
+            navigationController?.setViewControllers([loginViewController], animated: true)
         }
         else {
-            let loginViewController = storyBoard.instantiateViewController(withIdentifier: "loginViewController")
-            navigationController?.setViewControllers([loginViewController], animated: false)
+            // moves to appointments screen
+            let appointmentsViewController = storyBoard.instantiateViewController(withIdentifier: "AppointmentsViewController")
+            navigationController?.setViewControllers([appointmentsViewController], animated: true)
         }
-//        if let uuid = UIDevice.current.identifierForVendor?.uuidString {
-//            //TODO: create APILoginRequestModel
-//            let email = "aysegullcopur@gmail.com"
-//            API.login(email: email, deviceUDID: uuid)
-//        }
     }
-    
 }
 
 extension LaunchViewController: CLLocationManagerDelegate {
