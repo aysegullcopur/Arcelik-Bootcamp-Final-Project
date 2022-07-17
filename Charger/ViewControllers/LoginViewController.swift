@@ -31,6 +31,7 @@ class LoginViewController: UIViewController {
                 .foregroundColor: #colorLiteral(red: 0.7176470588, green: 0.7411764706, blue: 0.7960784314, alpha: 1)
             ]
         )
+        emailTextField.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -86,4 +87,13 @@ class LoginViewController: UIViewController {
         navigationController?.setViewControllers([appointmentsViewController], animated: true)
     }
 
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.endEditing(true)
+        return true
+    }
+    
 }
