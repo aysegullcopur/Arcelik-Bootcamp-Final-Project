@@ -25,6 +25,7 @@ class ProfileViewController: UIViewController {
         super.viewDidLoad()
         //hides left top item bar's name
         navigationController?.navigationBar.topItem?.title = ""
+        navigationController?.navigationBar.tintColor = UIColor.lightGray
         // set email and deviceId texts
         emailLabel.text = UserDefaultsLogin.email!
         deviceIdLabel.text = String(UserDefaultsLogin.userId!)
@@ -63,7 +64,6 @@ class ProfileViewController: UIViewController {
         logoutButton.isEnabled = value
         // bar button item disables
         navigationController?.navigationBar.isUserInteractionEnabled = false
-        navigationController?.navigationBar.tintColor = UIColor.lightGray
     }
     // moves to login screen after button tapped
     private func navigateToLoginScreen() {

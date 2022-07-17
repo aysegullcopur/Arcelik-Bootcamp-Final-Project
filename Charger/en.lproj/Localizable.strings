@@ -20,3 +20,6 @@
 
 "headerPastAppointmentsTitle" = "PAST APPOINTMENTS";
 
+"stationsListInfo" = "has <<0>> station/stations.";
+
+"enterDatePlaceholder" = "Enter date";
