@@ -3,6 +3,7 @@
   <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss1.png" width="33%" />
   <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss2.png" width="33%" />
   <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss3.png" width="33%" />
+</div>
 <div>
   <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss4.png" width="33%" />
   <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss5.png" width="33%" />
