@@ -115,3 +115,15 @@ struct APITimeSlotsModel: Decodable {
     let slot: String
     let isOccupied: Bool
 }
+
+struct APIMakeAppointmentRequestModel: Encodable {
+    let stationID: Int
+    let socketID: Int
+    let timeSlot: String
+    let appointmentDate: String
+}
+
+struct APIMakeAppointmentResponseModel: Decodable {
+    let time: String
+    let date: String
+}

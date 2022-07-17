@@ -20,6 +20,12 @@ class AppointmentDetailViewController: UIViewController {
     @IBOutlet weak var appointmentDateLabel: UILabel!
     @IBOutlet weak var appointmentTimeLabel: UILabel!
     
+    @IBOutlet weak var approveButton: UIButton!
+    
+    @IBAction func approveButtonTapped(_ sender: UIButton) {
+        makeAppointment()
+    }
+    
     var selectedStation: APIAllStationModel?
     var selectedSocket: SocketModel?
     var selectedSocketTimeSlot: SocketTimeSlot?
@@ -53,4 +59,41 @@ class AppointmentDetailViewController: UIViewController {
         appointmentDateLabel.text = selectedSocket?.appointmentDateString
         appointmentTimeLabel.text = selectedSocketTimeSlot?.timeString
     }
+    
+    private func presentAlert(title: String) {
+        let alert = UIAlertController(title: title, message: nil, preferredStyle: .alert)
+        let action = UIAlertAction(title: String(localized: "alertActionOkayTitle") , style: .cancel, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true)
+    }
+    
+    private func makeAppointment() {
+        guard let socket = selectedSocket, let station = selectedStation, let socketTimeSlot = selectedSocketTimeSlot, let userId = UserDefaultsLogin.userId else {
+            presentAlert(title: String(localized: "genericErrorMessage"))
+            return
+        }
+
+        let requestModel = APIMakeAppointmentRequestModel(
+            stationID: station.id,
+            socketID: socket.apiSocket.socketID,
+            timeSlot: socketTimeSlot.timeString,
+            appointmentDate: socket.appointmentDateString
+        )
+        
+        view.isUserInteractionEnabled = false
+        navigationController?.navigationBar.isUserInteractionEnabled = false
+        
+        API.makeAppointment(userId: userId, latitude: nil, longitude: nil, requestModel: requestModel, completion: { result in
+            switch result {
+            case .success(_):
+                self.navigationController?.popToRootViewController(animated: true)
+            case .failure(_):
+                self.presentAlert(title: String(localized: "genericErrorMessage"))
+            }
+            
+            self.view.isUserInteractionEnabled = false
+            self.navigationController?.navigationBar.isUserInteractionEnabled = false
+        })
+    }
+    
 }

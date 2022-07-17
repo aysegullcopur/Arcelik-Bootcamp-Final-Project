@@ -23,3 +23,5 @@
 "stationsListInfo" = "şehri için <<0>> sonuç görüntüleniyor.";
 
 "enterDatePlaceholder" = "Tarih giriniz";
+
+"improperDateErrorMessage" = "Geçersiz tarih ve saat.";

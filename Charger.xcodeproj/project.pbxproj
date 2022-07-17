@@ -39,14 +39,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C38B44202884488400761A29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		C38B4422288448B700761A29 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
 		E46F17622871F6B100F7AADA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		E46F17642871F6CF00F7AADA /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		E46F176628720AB800F7AADA /* APIModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIModels.swift; sourceTree = "<group>"; };
 		E46F1769287443D700F7AADA /* UserDefaultsLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsLogin.swift; sourceTree = "<group>"; };
 		E46F176B28745B8900F7AADA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E46F176D28745BBE00F7AADA /* AppointmentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsViewController.swift; sourceTree = "<group>"; };
-		E46F1777287C338200F7AADA /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Main.strings; sourceTree = "<group>"; };
-		E46F1779287C338800F7AADA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		E46F177A287C409000F7AADA /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		E46F177C287C44DA00F7AADA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		E46F1783287C9D8E00F7AADA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -297,8 +297,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				E49A94E5286CE50500CBB7F5 /* Base */,
-				E46F1777287C338200F7AADA /* tr */,
-				E46F1779287C338800F7AADA /* en */,
+				C38B44202884488400761A29 /* en */,
+				C38B4422288448B700761A29 /* tr */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

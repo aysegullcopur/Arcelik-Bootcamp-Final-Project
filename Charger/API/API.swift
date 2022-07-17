@@ -102,31 +102,31 @@ class API {
     }
     
     static func getStations(userId: Int, latitude: Double?, longitude: Double?, completion: @escaping (Result<[APIAllStationModel], Error>) -> Void) {
-            var queryItems: [URLQueryItem] = [
-                URLQueryItem(name: "userID", value: String(userId))
-            ]
-            if let latitude = latitude, let longitude = longitude {
-                queryItems.append(contentsOf: [
-                    URLQueryItem(name: "userLatitude", value: String(latitude)),
-                    URLQueryItem(name: "userLongitude", value: String(longitude)),
-                ])
-            }
-           guard let url = makeUrl(endpoint: .stations, queryItems: queryItems) else {
-               return
-           }
-           
-           let urlRequest = makeUrlRequest(url: url, httpMethod: "GET", httpBody: nil)
-           urlSession.dataTask(with: urlRequest) { (data, response, error) in
-               DispatchQueue.main.async {
-                   if let data = data, let responseModel = try? JSONDecoder().decode([APIAllStationModel].self, from: data) {
-                       completion(.success(responseModel))
-                   }
-                   else {
-                       completion(.failure(error ?? NSError()))
-                   }
-               }
-           }.resume()
+        var queryItems: [URLQueryItem] = [
+            URLQueryItem(name: "userID", value: String(userId))
+        ]
+        if let latitude = latitude, let longitude = longitude {
+            queryItems.append(contentsOf: [
+                URLQueryItem(name: "userLatitude", value: String(latitude)),
+                URLQueryItem(name: "userLongitude", value: String(longitude)),
+            ])
+        }
+       guard let url = makeUrl(endpoint: .stations, queryItems: queryItems) else {
+           return
        }
+       
+       let urlRequest = makeUrlRequest(url: url, httpMethod: "GET", httpBody: nil)
+       urlSession.dataTask(with: urlRequest) { (data, response, error) in
+           DispatchQueue.main.async {
+               if let data = data, let responseModel = try? JSONDecoder().decode([APIAllStationModel].self, from: data) {
+                   completion(.success(responseModel))
+               }
+               else {
+                   completion(.failure(error ?? NSError()))
+               }
+           }
+       }.resume()
+   }
     
     static func stationAvailability(userId: Int, date: String, stationId: Int, completion: @escaping (Result<APIStationTimeAvailabilityModel, Error>) -> Void) {
         let queryItems: [URLQueryItem] = [
@@ -148,8 +148,38 @@ class API {
                 }
             }
         }.resume()
-        
     }
+    
+    static func makeAppointment(userId: Int, latitude: Double?, longitude: Double?, requestModel: APIMakeAppointmentRequestModel, completion: @escaping (Result<APIMakeAppointmentResponseModel, Error>) -> Void) {
+        var queryItems: [URLQueryItem] = [
+            URLQueryItem(name: "userID", value: String(userId))
+        ]
+        if let latitude = latitude, let longitude = longitude {
+            queryItems.append(contentsOf: [
+                URLQueryItem(name: "userLatitude", value: String(latitude)),
+                URLQueryItem(name: "userLongitude", value: String(longitude)),
+            ])
+        }
+        
+        guard let url = makeUrl(endpoint: .makeAppointment, queryItems: queryItems) else {
+            return
+        }
+        
+        let httpBody = try? JSONEncoder().encode(requestModel)
+        
+        let urlRequest = makeUrlRequest(url: url, httpMethod: "POST", httpBody: httpBody)
+        urlSession.dataTask(with: urlRequest) { (data, response, error) in
+            DispatchQueue.main.async {
+                if let data = data, let response = try? JSONDecoder().decode(APIMakeAppointmentResponseModel.self, from: data) {
+                    completion(.success(response))
+                }
+                else {
+                    completion(.failure(error ?? NSError()))
+                }
+            }
+        }.resume()
+    }
+    
     private static func makeUrl(endpoint: APIEndpoint, queryItems: [URLQueryItem] = []) -> URL? {
         guard var urlComponents = URLComponents(string: domain + endpoint.path) else {
             return nil

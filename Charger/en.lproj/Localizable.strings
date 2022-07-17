@@ -23,3 +23,5 @@
 "stationsListInfo" = "has <<0>> station/stations.";
 
 "enterDatePlaceholder" = "Enter date";
+
+"improperDateErrorMessage" = "Invalid date and time.";
