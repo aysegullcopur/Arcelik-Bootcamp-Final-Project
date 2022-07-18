@@ -1,5 +1,7 @@
 # The Charger App Project
 - The app provides to make appointments from car charge stations in the Turkey. 
+- Supported Languages: English, Turkish
+- Design Pattern: MVC
 
 ## The Launch Screen
 <img src="https://github.com/aysegullcopur/Arcelik-Bootcamp-Final-Project/blob/main/Screens/ss1.png" width="30%" />
